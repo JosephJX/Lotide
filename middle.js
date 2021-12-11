@@ -1,36 +1,18 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length === arr2.length) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        return false;
-      }
-    }
-    return true;
-  } else {
-    return false;
-  }
+const eqArrays = require("./eqArrays")
 
-};
-
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅  Assertion passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑  Assertion failed: ${arr1} !== ${arr2}`);
-  }
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
 const middle = (arr) => {
   if (arr.length <= 2) {
     return [];
   } else if (arr.length % 2 !== 0) {
-    var formulaOdd = Math.floor(arr.length / 2)
-    console.log(arr[formulaOdd])
-    return arr[formulaOdd]
-  } else  {
-    var formulaEven = (arr.length / 2 )
-    console.log(arr[formulaEven - 1], arr[formulaEven])
-    return arr[formulaEven]
+    let formulaOdd = Math.floor(arr.length / 2);
+    console.log(arr[formulaOdd]);
+    return arr[formulaOdd];
+  } else {
+    let formulaEven = (arr.length / 2);
+    console.log(arr[formulaEven - 1], arr[formulaEven]);
+    return arr[formulaEven];
   }
 };
 
