@@ -2,7 +2,7 @@ const assertEqual = require("./assertEqual")
 const eqArrays = require("./eqArrays")
 
 const tail = (arr) => {
-  return arr.slice(1);
+  return arr[arr.length - 1];
 };
 
 module.exports = tail;
