@@ -1,6 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@josephjx/lotide",
   "version": "1.0.0",
+  "description2": "lotide project",
+  "description1": "lotide library project of the Lighthouse Labs bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -12,11 +14,15 @@
     "type": "git",
     "url": "git+https://github.com/JosephJX/Lotide.git"
   },
-  "author": "",
+  "author": "Joseph McGregor",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JosephJX/Lotide/issues"
   },
   "homepage": "https://github.com/JosephJX/Lotide#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
 }
