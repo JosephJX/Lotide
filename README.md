@@ -45,6 +45,8 @@ The following functions are currently implemented:
 
 - `findKeyByValue`: Takes an object and a value and returns the first key which contains the given value. If no key with that given value is found, it returns undefined.
 
+- `flatten`: Returns a flattened version of the inputted array.
+
 - `head`: Returns the first item in the array.
 
 - `flatten`: Returns a flattened version of the inputted array.
